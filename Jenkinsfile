@@ -6,6 +6,6 @@ node {
                 sh 'mvn clean package'
             }
     stage('ArchiveResults') {
-        archiveArtifacts 'target/*.war'
+        archiveArtifacts '/var/lib/jenkins/workspace/java-project/target/*.war'
     }
 }
