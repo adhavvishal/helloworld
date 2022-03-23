@@ -1,6 +1,6 @@
 node {
     stage('Preparation') { 
-        git url: 'https://github.com/adhavishal/helloworld.git'
+        git 'https://github.com/adhavvishal/helloworld'
     }
     stage('Build') {
                 sh 'mvn clean package'
