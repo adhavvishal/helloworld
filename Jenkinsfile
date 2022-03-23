@@ -5,4 +5,7 @@ node {
     stage('Build') {
                 sh 'mvn clean package'
             }
+    stage('ArchiveResults') {
+        archiveArtifacts 'target/*.war'
+    }
 }
